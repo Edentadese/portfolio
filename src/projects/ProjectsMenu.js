@@ -25,11 +25,11 @@ export default class ProjectsMenu extends Component {
         <div>{project.description}</div>
         <div className="link-container">
           <a href={project.github} target="_blank" rel="noopener noreferrer">
-            GITHUB
+            GO TO FIGMA
           </a>
-          <a href={project.demo} target="_blank" rel="noopener noreferrer">
+          {/* <a href={project.demo} target="_blank" rel="noopener noreferrer">
             DEMO
-          </a>
+          </a> */}
         </div>
       </div>
     ));
@@ -37,7 +37,7 @@ export default class ProjectsMenu extends Component {
 
   render() {
     const { activeProject } = this.state;
-    const projectItems = ["PROJECT ONE", "PROJECT TWO", "PROJECT THREE"];
+    const projectItems = ["PROJECT ONE", "PROJECT TWO", "PROJECT THREE", "PROJECT FOUR"];
 
     return (
       <div className="project-menu">
